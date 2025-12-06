@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenBreweryDB Suite" parallel="methods" thread-count="8">
+
+    <listeners>
+        <listener class-name="com.openbrewerydb.listeners.HttpArtifactsTestNgListener"/>
+    </listeners>
+
+    <test name="Search Breweries Tests">
+        <classes>
+            <class name="com.openbrewerydb.tests.search.SearchBreweriesApiTest"/>
+        </classes>
+    </test>
+</suite>

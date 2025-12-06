@@ -1,0 +1,1 @@
+rootProject.name = "openbrewerydb_tests"
