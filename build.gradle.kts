@@ -26,12 +26,6 @@ configurations.all {
     exclude(group = "org.slf4j", module = "slf4j-simple")
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(11))
-    }
-}
-
 tasks.test {
     useTestNG {
         suites("src/test/resources/testng.xml")
